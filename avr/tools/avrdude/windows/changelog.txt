@@ -1,0 +1,5 @@
+commit cbe6bb316d75e56af490ba438e2a5bed0b0a96c8
+Author: Budi Prakosa a.k.a Iyok <iyok@deadmediafm.org>
+Date:   Tue Mar 15 03:41:12 2016 -0700
+
+    fix timing bug on arduino ide running windows

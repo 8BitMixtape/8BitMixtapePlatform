@@ -1,0 +1,5 @@
+commit 2ee312b5e147d64cc515ce2ac2c45973f3e4295d
+Author: Budi Prakosa a.k.a Iyok <iyok@deadmediafm.org>
+Date:   Wed Mar 16 14:42:39 2016 +0100
+
+    bootloader wait for 2 secs
