@@ -34,5 +34,8 @@ cocomake.variant=teenyriot
 
 cocomake.menu.chip.attiny85=attiny85
 cocomake.menu.chip.attiny85.build.mcu=attiny85
+cocomake.menu.chip.attiny85.variant=teenyriot
+
 cocomake.menu.chip.attiny84=attiny84
 cocomake.menu.chip.attiny84.build.mcu=attiny84
+cocomake.menu.chip.attiny84.variant=8bitmixtapeX4
