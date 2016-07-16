@@ -1,0 +1,3 @@
+[submodule "avr/libraries/TeenyKeyboard"]
+	path = avr/libraries/TeenyKeyboard
+	url = https://github.com/TeenyRiotAddons/TeenyKeyboard.git
