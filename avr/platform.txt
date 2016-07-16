@@ -120,14 +120,3 @@ tools.avrdude.upload.params.verbose=
 tools.avrdude.upload.params.quiet=
 
 tools.avrdude.upload.pattern="{cmd.path}" "-C{config.path}" {upload.verbose} -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D "-Uflash:w:{build.path}/{build.project_name}.hex:i"
-
-
-#for micronucleus bootloader
-
-tools.micronucleus.path={runtime.platform.path}/tools/micronucleus
-tools.micronucleus.cmd.path={path}/{runtime.os}/launcher
-
-tools.micronucleus.upload.params.verbose=
-tools.micronucleus.upload.params.quiet=
-#tools.micronucleus.upload.pattern="{cmd.path}" --run --timeout 60 "{build.path}/{build.project_name}.hex"
-tools.micronucleus.upload.pattern="{cmd.path}" -cdigispark --timeout 60 -Uflash:w:{build.path}/{build.project_name}.hex:i
