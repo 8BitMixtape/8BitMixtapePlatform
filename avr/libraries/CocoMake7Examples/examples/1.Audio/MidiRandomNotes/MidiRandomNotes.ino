@@ -10,23 +10,23 @@
 
   --------------------------------------------------------------------------------------------- */
 
-#include <TeenyMidi.h>        // you MUST include the TeenyMidi library
+#include <CocoMidi.h>        // you MUST include the CocoMidi library
 int note = 0;
 
 unsigned long lastTime;            // variable to store the last time we sent a chord
 
 void setup() {
-  TeenyMidi.init();
+  CocoMidi.init();
 }
 
 
 // the loop routine runs over and over again forever:
 void loop() {
   note = random(12, 96);
-  TeenyMidi.send(MIDI_NOTEON, note, 127);
-  TeenyMidi.delay(50);
-  TeenyMidi.send(MIDI_NOTEOFF, note, 127);
-  TeenyMidi.delay(50);
-  TeenyMidi.update();
+  CocoMidi.send(MIDI_NOTEON, note, 127);
+  CocoMidi.delay(50);
+  CocoMidi.send(MIDI_NOTEOFF, note, 127);
+  CocoMidi.delay(50);
+  CocoMidi.update();
 
 }
