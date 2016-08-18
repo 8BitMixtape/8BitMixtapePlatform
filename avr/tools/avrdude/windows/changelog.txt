@@ -1,5 +1,5 @@
-commit cbe6bb316d75e56af490ba438e2a5bed0b0a96c8
-Author: Budi Prakosa a.k.a Iyok <iyok@deadmediafm.org>
-Date:   Tue Mar 15 03:41:12 2016 -0700
+commit 7db7f06ec33af157b9cf97500c54b367a9b464bb
+Author: Budi Prakosa <iyok@deadmediafm.org>
+Date:   Thu Aug 18 13:02:13 2016 +0700
 
-    fix timing bug on arduino ide running windows
+    remove midi list
