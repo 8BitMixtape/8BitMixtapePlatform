@@ -3,50 +3,69 @@ menu.core=Core
 
 menu.chip=Chip
 menu.clock=Clock
-menu.bod=B.O.D.
 menu.pinmapping=Pin Mapping
 
 ##############################################################
 
 8bitmixtapeneo.name=8BitMixtapeNeo
+
 8bitmixtapeneo.upload.protocol=usbasp
 8bitmixtapeneo.upload.maximum_size=5375
 8bitmixtapeneo.upload.speed=19200
 8bitmixtapeneo.upload.disable_flushing=true
 8bitmixtapeneo.upload.tool=avrdude
-8bitmixtapeneo.build.mcu=attiny85
-8bitmixtapeneo.build.f_cpu=16000000L
-8bitmixtapeneo.build.core=teenyriot-core
-8bitmixtapeneo.build.variant=teenyriot
-8bitmixtapeneo.build.board=AVR_COCOMAKE7
 8bitmixtapeneo.upload.protocol=usbasp
 8bitmixtapeneo.upload.maximum_size=5375
 8bitmixtapeneo.upload.speed=19200
 8bitmixtapeneo.upload.disable_flushing=true
 8bitmixtapeneo.upload.tool=hex2wav
+
+8bitmixtapeneo.build.mcu=attiny85
+8bitmixtapeneo.build.board=AVR_COCOMAKE7
+
+8bitmixtapeneo.bootloader.file=tinyaudioboot/AudioBootAttiny85_AudioPB3_LEDPB1.hex
+8bitmixtapeneo.bootloader.tool=arduino:avrdude
+8bitmixtapeneo.bootloader.unlock_bits=0xFF
 8bitmixtapeneo.bootloader.low_fuses=0xFE
 8bitmixtapeneo.bootloader.high_fuses=0xDD
 8bitmixtapeneo.bootloader.extended_fuses=0xE1
-8bitmixtapeneo.bootloader.file=tinyaudioboot/AudioBootAttiny85_AudioPB3_LEDPB1.hex
-8bitmixtapeneo.bootloader.tool=arduino:avrdude
-8bitmixtapeneo.core=teenyriot-core
-8bitmixtapeneo.variant=teenyriot
-
 
 ##############################################################
 
-8bitmixtapeneo.menu.bootloader.tinyaudioboot=TinyAudioBoot Audio PB3 Led PB1
+8bitmixtapeneo.menu.bootloader.tinyaudioboot=TinyAudioBoot Audio:PB3/PIN2 Led:PB1/PIN6
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.protocol=usbasp
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.maximum_size=5375
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.speed=19200
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.disable_flushing=true
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.tool=hex2wav
-
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.file=tinyaudioboot/AudioBootAttiny85_AudioPB3_LEDPB1.hex
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.tool=arduino:avrdude
 
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.low_fuses=0xFE
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.high_fuses=0xDD
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.extended_fuses=0xE1
+8bitmixtapeneo.menu.bootloader.empty=Empty Bootloader
+8bitmixtapeneo.menu.bootloader.empty.upload.protocol=usbasp
+8bitmixtapeneo.menu.bootloader.empty.upload.maximum_size=5375
+8bitmixtapeneo.menu.bootloader.empty.upload.speed=19200
+8bitmixtapeneo.menu.bootloader.empty.upload.disable_flushing=true
+8bitmixtapeneo.menu.bootloader.empty.upload.tool=avrdude
+8bitmixtapeneo.menu.bootloader.empty.bootloader.file=empty/empty_all.hex
+8bitmixtapeneo.menu.bootloader.empty.bootloader.tool=arduino:avrdude
+
+##############################################################
+
+8bitmixtapeneo.menu.core.arduinocore=Arduino Built in 16 MHz (PLL/NO.BOD)
+8bitmixtapeneo.menu.core.arduinocore.build.core=arduino:arduino
+8bitmixtapeneo.menu.core.arduinocore.build.variant=tiny8
+8bitmixtapeneo.menu.core.arduinocore.build.f_cpu=16000000L
+8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.low_fuses=0xF1
+8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.high_fuses=0xD7
+8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.extended_fuses=0xFF
+
+8bitmixtapeneo.menu.core.teenyriotcore=TeenyRiotCore 16 MHz (PLL/NO.BOD)
+8bitmixtapeneo.menu.core.teenyriotcore.build.core=teenyriot-core
+8bitmixtapeneo.menu.core.teenyriotcore.build.variant=teenyriot
+8bitmixtapeneo.menu.core.teenyriotcore.build.f_cpu=16000000L
+8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.low_fuses=0xF1
+8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.high_fuses=0xD7
+8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.extended_fuses=0xFF
 
 ##############################################################
