@@ -52,7 +52,7 @@ menu.pinmapping=Pin Mapping
 
 ##############################################################
 
-8bitmixtapeneo.menu.core.arduinocore=Arduino Built in 16 MHz (PLL/NO.BOD)
+8bitmixtapeneo.menu.core.arduinocore=Arduino Core 16MHz (PLL/NO.BOD)
 8bitmixtapeneo.menu.core.arduinocore.build.core=arduino:arduino
 8bitmixtapeneo.menu.core.arduinocore.build.variant=tiny8
 8bitmixtapeneo.menu.core.arduinocore.build.f_cpu=16000000L
@@ -60,7 +60,7 @@ menu.pinmapping=Pin Mapping
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.high_fuses=0xD7
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.extended_fuses=0xFF
 
-8bitmixtapeneo.menu.core.teenyriotcore=TeenyRiotCore 16 MHz (PLL/NO.BOD)
+8bitmixtapeneo.menu.core.teenyriotcore=TeenyRiot Core 16MHz (PLL/NO.BOD)
 8bitmixtapeneo.menu.core.teenyriotcore.build.core=teenyriot-core
 8bitmixtapeneo.menu.core.teenyriotcore.build.variant=teenyriot
 8bitmixtapeneo.menu.core.teenyriotcore.build.f_cpu=16000000L
