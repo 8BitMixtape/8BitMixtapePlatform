@@ -1,15 +1,6 @@
-[submodule "avr/libraries/CocoMidi"]
-	path = avr/libraries/CocoMidi
-	url = git@github.com:CocoMake7Addons/CocoMidi.git
 [submodule "avr/libraries/CocoTouch"]
 	path = avr/libraries/CocoTouch
 	url = git@github.com:CocoMake7Addons/CocoTouch.git
-[submodule "avr/libraries/CocoMouse"]
-	path = avr/libraries/CocoMouse
-	url = git@github.com:CocoMake7Addons/CocoMouse.git
 [submodule "avr/libraries/CocoSynth"]
 	path = avr/libraries/CocoSynth
 	url = git@github.com:CocoMake7Addons/CocoSynth.git
-[submodule "avr/libraries/CocoKeyboard"]
-	path = avr/libraries/CocoKeyboard
-	url = git@github.com:CocoMake7Addons/CocoKeyboard.git
