@@ -15,7 +15,7 @@ menu.pinmapping=Pin Mapping
 8bitmixtapeneo.upload.disable_flushing=true
 8bitmixtapeneo.upload.tool=avrdude
 8bitmixtapeneo.build.mcu=attiny85
-8bitmixtapeneo.build.f_cpu=16500000L
+8bitmixtapeneo.build.f_cpu=16000000L
 8bitmixtapeneo.build.core=teenyriot-core
 8bitmixtapeneo.build.variant=teenyriot
 8bitmixtapeneo.build.board=AVR_COCOMAKE7
@@ -50,4 +50,3 @@ menu.pinmapping=Pin Mapping
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.extended_fuses=0xE1
 
 ##############################################################
-
