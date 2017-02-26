@@ -4,7 +4,7 @@
 # For more info:
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
-name=CocoMake7
+name=8BitMixtapePlatform
 version=1.1
 
 # AVR compile variables
@@ -96,27 +96,13 @@ recipe.preproc.macros="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {
 # AVR Uploader/Programmers tools
 # ------------------------------
 # base path for the hacked version of avrdude
-tools.avrdude.path={runtime.platform.path}/tools/avrdude
-
-tools.avrdude.cmd.path={path}/{runtime.os}/avrdude
-tools.avrdude.config.path={path}/{runtime.os}/avrdude.conf
-
-#burn bootloader step 1 - upload bootloader
-
-tools.avrdude.erase.params.verbose=-v
-tools.avrdude.erase.params.quiet=-q -q
-tools.avrdude.erase.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -b19200 -p{build.mcu} "-C{config.path}" "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:r"
-
-#burn bootloader step 2 - burn fuse
-
-tools.avrdude.bootloader.params.verbose=-v
-tools.avrdude.bootloader.params.quiet=-q -q
-tools.avrdude.bootloader.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -p{build.mcu} "-C{config.path}" -Ulfuse:w:{bootloader.low_fuses}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m
+tools.hex2wav.path={runtime.platform.path}/tools/hex2wav
+tools.hex2wav.cmd.path={path}/hex2wav.jar
 
 #uploading program
 
 #always verbose
-tools.avrdude.upload.params.verbose=
-tools.avrdude.upload.params.quiet=
+tools.hex2wav.upload.params.verbose=
+tools.hex2wav.upload.params.quiet=
 
-tools.avrdude.upload.pattern="{cmd.path}" "-C{config.path}" {upload.verbose} -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D "-Uflash:w:{build.path}/{build.project_name}.hex:i"
+tools.hex2wav.upload.pattern=java -jar "{cmd.path}" "{build.path}/{build.project_name}.hex"
