@@ -10,7 +10,7 @@ menu.pinmapping=Pin Mapping
 8bitmixtapeneo.name=8BitMixtapeNeo
 
 8bitmixtapeneo.upload.protocol=usbasp
-8bitmixtapeneo.upload.maximum_size=8192
+8bitmixtapeneo.upload.maximum_size=7167
 8bitmixtapeneo.upload.speed=19200
 8bitmixtapeneo.upload.disable_flushing=true
 8bitmixtapeneo.upload.tool=hex2wav
@@ -29,7 +29,7 @@ menu.pinmapping=Pin Mapping
 
 8bitmixtapeneo.menu.bootloader.tinyaudioboot=TinyAudioBoot Audio:PB3/PIN2 Led:PB1/PIN6
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.protocol=usbasp
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.maximum_size=8192
+8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.maximum_size=7167
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.speed=19200
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.disable_flushing=true
 8bitmixtapeneo.menu.bootloader.tinyaudioboot.upload.tool=hex2wav
