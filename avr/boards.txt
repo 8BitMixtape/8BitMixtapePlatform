@@ -10,12 +10,7 @@ menu.pinmapping=Pin Mapping
 8bitmixtapeneo.name=8BitMixtapeNeo
 
 8bitmixtapeneo.upload.protocol=usbasp
-8bitmixtapeneo.upload.maximum_size=5375
-8bitmixtapeneo.upload.speed=19200
-8bitmixtapeneo.upload.disable_flushing=true
-8bitmixtapeneo.upload.tool=avrdude
-8bitmixtapeneo.upload.protocol=usbasp
-8bitmixtapeneo.upload.maximum_size=5375
+8bitmixtapeneo.upload.maximum_size=8192
 8bitmixtapeneo.upload.speed=19200
 8bitmixtapeneo.upload.disable_flushing=true
 8bitmixtapeneo.upload.tool=hex2wav
@@ -56,16 +51,33 @@ menu.pinmapping=Pin Mapping
 8bitmixtapeneo.menu.core.arduinocore.build.core=arduino:arduino
 8bitmixtapeneo.menu.core.arduinocore.build.variant=tiny8
 8bitmixtapeneo.menu.core.arduinocore.build.f_cpu=16000000L
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.low_fuses=0xF1
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.high_fuses=0xD7
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.extended_fuses=0xFF
+8bitmixtapeneo.menu.core.arduinocore.bootloader.low_fuses=0xF1
+8bitmixtapeneo.menu.core.arduinocore.bootloader.high_fuses=0xD7
+8bitmixtapeneo.menu.core.arduinocore.bootloader.extended_fuses=0xFF
 
 8bitmixtapeneo.menu.core.teenyriotcore=TeenyRiot Core 16MHz (PLL/NO.BOD)
 8bitmixtapeneo.menu.core.teenyriotcore.build.core=teenyriot-core
 8bitmixtapeneo.menu.core.teenyriotcore.build.variant=teenyriot
 8bitmixtapeneo.menu.core.teenyriotcore.build.f_cpu=16000000L
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.low_fuses=0xF1
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.high_fuses=0xD7
-8bitmixtapeneo.menu.bootloader.tinyaudioboot.bootloader.extended_fuses=0xFF
+8bitmixtapeneo.menu.core.teenyriotcore.bootloader.low_fuses=0xF1
+8bitmixtapeneo.menu.core.teenyriotcore.bootloader.high_fuses=0xD7
+8bitmixtapeneo.menu.core.teenyriotcore.bootloader.extended_fuses=0xFF
+
+8bitmixtapeneo.menu.core.attinycore=ATTinyCore(SpenceKonde) 16MHz(PLL/NO.BOD)
+8bitmixtapeneo.menu.core.attinycore.build.core=tiny
+8bitmixtapeneo.menu.core.attinycore.build.variant=tinyX5
+8bitmixtapeneo.menu.core.attinycore.build.f_cpu=16000000L
+8bitmixtapeneo.menu.core.attinycore.bootloader.low_fuses=0xF1
+8bitmixtapeneo.menu.core.attinycore.bootloader.high_fuses=0xD7
+8bitmixtapeneo.menu.core.attinycore.bootloader.extended_fuses=0xFF
+8bitmixtapeneo.menu.core.attinycore.build.board=AVR_ATTINYX5
+
+8bitmixtapeneo.menu.core.barebone=Barebone/No Core 16MHz (PLL/NO.BOD)
+8bitmixtapeneo.menu.core.barebone.build.core=empty
+8bitmixtapeneo.menu.core.barebone.build.variant=tinyX5
+8bitmixtapeneo.menu.core.barebone.build.f_cpu=16000000L
+8bitmixtapeneo.menu.core.barebone.bootloader.low_fuses=0xF1
+8bitmixtapeneo.menu.core.barebone.bootloader.high_fuses=0xD7
+8bitmixtapeneo.menu.core.barebone.bootloader.extended_fuses=0xFF
 
 ##############################################################
