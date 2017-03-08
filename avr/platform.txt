@@ -81,8 +81,8 @@ recipe.size.regex.data=^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*
 recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
 
 ## Save hex
-recipe.output.tmp_file={build.project_name}.hex.wav
-recipe.output.save_file={build.project_name}.hex.wav
+recipe.output.tmp_file={build.project_name}.wav
+recipe.output.save_file={build.project_name}.wav
 
 ## Preprocessor
 preproc.includes.flags=-w -x c++ -M -MG -MP
@@ -93,7 +93,7 @@ preprocessed_file_path={build.path}/nul
 recipe.preproc.macros="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{preprocessed_file_path}"
 
 
-recipe.hooks.savehex.presavehex.1.pattern=java -jar "{runtime.platform.path}/tools/hex2wav/hex2wav.jar" "{build.path}/{build.project_name}.hex" "{build.path}/{build.project_name}.hex"
+recipe.hooks.savehex.presavehex.1.pattern="{runtime.platform.path}/tools/hex2wav/{runtime.os}/hex2wav" "{build.path}/{build.project_name}.hex" "{build.path}/{build.project_name}.wav"
 
 # AVR Uploader/Programmers tools
 # ------------------------------
@@ -105,7 +105,7 @@ tools.hex2wav.cmd.path={path}/{runtime.os}/hex2wav
 
 tools.hex2wav.upload.params.verbose=
 tools.hex2wav.upload.params.quiet=
-tools.hex2wav.upload.pattern="{cmd.path}" "{build.path}/{build.project_name}.hex"
+tools.hex2wav.upload.pattern="{cmd.path}" "{build.path}/{build.project_name}.hex" "{build.path}/{build.project_name}.wav"
 
 # 
 # AVRDUDE CONFIG
