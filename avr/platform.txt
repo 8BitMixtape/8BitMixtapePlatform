@@ -81,8 +81,8 @@ recipe.size.regex.data=^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*
 recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
 
 ## Save hex
-recipe.output.tmp_file={build.project_name}.wav
-recipe.output.save_file={build.project_name}.wav
+recipe.output.tmp_file={build.project_name}.hex.wav
+recipe.output.save_file={build.project_name}.hex.wav
 
 ## Preprocessor
 preproc.includes.flags=-w -x c++ -M -MG -MP
@@ -101,11 +101,11 @@ recipe.hooks.savehex.presavehex.1.pattern=java -jar "{runtime.platform.path}/too
 # HEX2WAV CONFIG
 
 tools.hex2wav.path={runtime.platform.path}/tools/hex2wav
-tools.hex2wav.cmd.path={path}/hex2wav.jar
+tools.hex2wav.cmd.path={path}/{runtime.os}/hex2wav
 
 tools.hex2wav.upload.params.verbose=
 tools.hex2wav.upload.params.quiet=
-tools.hex2wav.upload.pattern=java -jar "{cmd.path}" "{build.path}/{build.project_name}.hex"
+tools.hex2wav.upload.pattern="{cmd.path}" "{build.path}/{build.project_name}.hex"
 
 # 
 # AVRDUDE CONFIG

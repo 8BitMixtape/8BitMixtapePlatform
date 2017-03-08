@@ -1,0 +1,5 @@
+commit 2a7c9e21b56452a7b74abcd66028554ced1b73c0
+Author: Budi Prakosa <iyok@deadmediafm.org>
+Date:   Wed Mar 8 10:33:18 2017 +0700
+
+    remove cmath

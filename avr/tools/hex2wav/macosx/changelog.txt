@@ -1,0 +1,5 @@
+commit 858d5c92c788e2c3c109daa9cc4064d870253d42
+Author: Budi Prakosa <iyok@deadmediafm.org>
+Date:   Wed Mar 8 10:58:47 2017 +0700
+
+    osx build for 32
