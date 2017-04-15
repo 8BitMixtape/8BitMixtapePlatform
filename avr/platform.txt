@@ -119,13 +119,13 @@ tools.avrdude.config.path={path}/{runtime.os}/avrdude.conf
 
 tools.avrdude.erase.params.verbose=-v
 tools.avrdude.erase.params.quiet=-q -q
-tools.avrdude.erase.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -b19200 -p{build.mcu} "-C{config.path}" "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:r"
+tools.avrdude.erase.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -p{build.mcu} "-C{config.path}" -Ulfuse:w:{bootloader.low_fuses}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m
 
 #burn bootloader step 2 - burn fuse
 
 tools.avrdude.bootloader.params.verbose=-v
 tools.avrdude.bootloader.params.quiet=-q -q
-tools.avrdude.bootloader.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -p{build.mcu} "-C{config.path}" -Ulfuse:w:{bootloader.low_fuses}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m
+tools.avrdude.bootloader.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -b19200 -p{build.mcu} "-C{config.path}" "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:r"
 
 #uploading program
 
