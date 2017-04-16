@@ -125,7 +125,7 @@ tools.avrdude.erase.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params}
 
 tools.avrdude.bootloader.params.verbose=-v
 tools.avrdude.bootloader.params.quiet=-q -q
-tools.avrdude.bootloader.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -b19200 -p{build.mcu} "-C{config.path}" "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:r"
+tools.avrdude.bootloader.pattern="{cmd.path}" -c{protocol} -B4 {program.extra_params} -b19200 -p{build.mcu} "-C{config.path}" "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i"
 
 #uploading program
 
