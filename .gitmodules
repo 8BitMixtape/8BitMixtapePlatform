@@ -4,6 +4,3 @@
 [submodule "avr/libraries/CocoSynth"]
 	path = avr/libraries/CocoSynth
 	url = git@github.com:CocoMake7Addons/CocoSynth.git
-[submodule "avr/libraries/8Bit-Mixtape-NEO-Lib"]
-	path = avr/libraries/8Bit-Mixtape-NEO-Lib
-	url = https://badgeek@github.com/8BitMixtape/_8Bit-Mixtape-NEO-Lib.git
