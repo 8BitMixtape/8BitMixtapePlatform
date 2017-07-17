@@ -4,3 +4,6 @@
 [submodule "avr/libraries/CocoSynth"]
 	path = avr/libraries/CocoSynth
 	url = git@github.com:CocoMake7Addons/CocoSynth.git
+[submodule "avr/libraries/_8Bit-Mixtape-NEO-Lib"]
+	path = avr/libraries/_8Bit-Mixtape-NEO-Lib
+	url = https://github.com/8BitMixtape/_8Bit-Mixtape-NEO-Lib.git
