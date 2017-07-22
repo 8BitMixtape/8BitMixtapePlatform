@@ -7,3 +7,6 @@
 [submodule "avr/libraries/_8Bit-Mixtape-NEO-Lib"]
 	path = avr/libraries/_8Bit-Mixtape-NEO-Lib
 	url = https://github.com/8BitMixtape/_8Bit-Mixtape-NEO-Lib.git
+[submodule "avr/libraries/_8BitMixtapeNEO-Examples"]
+	path = avr/libraries/_8BitMixtapeNEO-Examples
+	url = https://badgeek@github.com/8BitMixtape/NeoCodeExamples.git
