@@ -10,6 +10,3 @@
 [submodule "avr/libraries/_8BitMixtapeNEO-Examples"]
 	path = avr/libraries/_8BitMixtapeNEO-Examples
 	url = https://badgeek@github.com/8BitMixtape/NeoCodeExamples.git
-[submodule "avr/libraries/Adafruit_NeoPixel"]
-	path = avr/libraries/Adafruit_NeoPixel
-	url = https://badgeek@github.com/adafruit/Adafruit_NeoPixel.git
