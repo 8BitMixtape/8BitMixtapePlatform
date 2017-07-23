@@ -13,6 +13,14 @@ asciiart
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # LD_PRELOAD="$DIR/libreadline.so.6 $DIR/libusb-1.0.so.0 $DIR/libusb-0.1.so.4 $DIR/libncurses.so.5" 
-$DIR/hex2wav_bin --no-sound "$@"
+
+
+if [ `getconf LONG_BIT` = "64" ]
+then
+	$DIR/hex2wav64_bin --no-sound "$@"
+else
+	$DIR/hex2wav32_bin --no-sound "$@"
+fi
+
 for last; do true; done
 aplay $last
