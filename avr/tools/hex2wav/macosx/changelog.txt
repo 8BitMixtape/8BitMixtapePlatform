@@ -1,5 +1,5 @@
-commit 858d5c92c788e2c3c109daa9cc4064d870253d42
+commit 5d9bae1661961bc4f684596cb575b40f8a013def
 Author: Budi Prakosa <iyok@deadmediafm.org>
-Date:   Wed Mar 8 10:58:47 2017 +0700
+Date:   Mon Aug 7 11:14:47 2017 +0700
 
-    osx build for 32
+    hex dump support for web platform
