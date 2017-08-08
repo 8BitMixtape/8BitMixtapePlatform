@@ -13,3 +13,6 @@
 [submodule "avr/libraries/Adafruit_NeoPixel"]
 	path = avr/libraries/Adafruit_NeoPixel
 	url = https://badgeek@github.com/adafruit/Adafruit_NeoPixel.git
+[submodule "avr/libraries/NeoSynth"]
+	path = avr/libraries/NeoSynth
+	url = https://badgeek@github.com/8BitMixtape/NeoSynth.git
