@@ -1,5 +1,5 @@
-commit 87ff1c005b1837016d22fb3596972c8113ac3520
+commit 1e64fd0743f2e71aea9f11201460d1778b1b921e
 Author: Budi Prakosa <iyok@deadmediafm.org>
-Date:   Tue Jan 30 07:55:36 2018 +0700
+Date:   Tue Jan 30 18:14:16 2018 +0700
 
-    update windows build machine
+    fix relative path to zip on windows
