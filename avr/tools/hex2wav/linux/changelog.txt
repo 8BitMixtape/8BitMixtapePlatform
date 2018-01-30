@@ -1,5 +1,5 @@
-commit b566fc3e0d4558ba3dd76f7464f9d399ffaac279
+commit 430889b2fb0233acf0526629cf17fe900ee2567c
 Author: Budi Prakosa <iyok@deadmediafm.org>
-Date:   Mon Aug 7 11:34:54 2017 +0700
+Date:   Tue Jan 30 11:30:29 2018 +0700
 
-    fix arch compile
+    fix suffix

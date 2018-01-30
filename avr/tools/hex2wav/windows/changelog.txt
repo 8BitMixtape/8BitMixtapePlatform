@@ -1,5 +1,5 @@
-commit 5d9bae1661961bc4f684596cb575b40f8a013def
+commit 87ff1c005b1837016d22fb3596972c8113ac3520
 Author: Budi Prakosa <iyok@deadmediafm.org>
-Date:   Mon Aug 7 11:14:47 2017 +0700
+Date:   Tue Jan 30 07:55:36 2018 +0700
 
-    hex dump support for web platform
+    update windows build machine
