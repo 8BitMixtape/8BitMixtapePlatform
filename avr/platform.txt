@@ -93,7 +93,7 @@ preprocessed_file_path={build.path}/nul
 recipe.preproc.macros="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{preprocessed_file_path}"
 
 
-recipe.hooks.savehex.presavehex.1.pattern="{runtime.platform.path}/tools/hex2wav/{runtime.os}/hex2wav" "--no-sound" "--dump-hex" "{build.path}/{build.project_name}.hex" "{build.path}/{build.project_name}.wav"
+recipe.hooks.savehex.presavehex.1.pattern="{runtime.platform.path}/tools/hex2wav/{runtime.os}/hex2wav" "--no-sound" "--zip-out" "--dump-hex" "{build.path}/{build.project_name}.hex" "{build.path}/{build.project_name}.wav"
 
 # AVR Uploader/Programmers tools
 # ------------------------------
