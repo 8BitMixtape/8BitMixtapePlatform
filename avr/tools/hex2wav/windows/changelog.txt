@@ -1,5 +1,5 @@
-commit 1e64fd0743f2e71aea9f11201460d1778b1b921e
+commit 3007379beb2ee1a8606c2aa136c7a3df41ef326b
 Author: Budi Prakosa <iyok@deadmediafm.org>
-Date:   Tue Jan 30 18:14:16 2018 +0700
+Date:   Wed Feb 14 23:12:25 2018 +0700
 
-    fix relative path to zip on windows
+    compile w sketch
